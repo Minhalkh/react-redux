@@ -4,7 +4,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
-import AdminPage from './pages/Admin/AdminPage';
+import AdminDashboard from './pages/Admin/AdminDashboard';
 import { Provider } from 'react-redux';
 import {store} from './Store/store'
 import CartPage from './pages/CartPage';
@@ -18,7 +18,7 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage/>}/>
         <Route path='/login' element={<LoginPage/>}/>
-        <Route path='/admin' element={<AdminPage/>}/>
+        <Route path='/admin-dashboard' element={<AdminDashboard/>}/>
         <Route path='/cart' element={<CartPage/>}/>
       </Routes>
     </Router>
