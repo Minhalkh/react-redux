@@ -22,15 +22,11 @@ function LoginPage() {
       if (email === 'admin@example.com') {
         localStorage.setItem('userRole', 'admin'); // Store role if admin
         console.log('Redirecting to admin dashboard');
-        // setTimeout(()=>{
         navigate('/admin-dashboard'); // Navigate to admin dashboard
-      // },100) // Delay navigation to ensure localStorage is set
       } else {
         localStorage.setItem('userRole', 'user'); // Store role as user
         console.log('Redirecting to user Home');
-        // setTimeout(()=>{
         navigate('/'); // Navigate to homepage
-      // },100)
       }
     } else {
       alert('Please enter both email and password!');
